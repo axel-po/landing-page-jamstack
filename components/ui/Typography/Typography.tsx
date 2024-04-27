@@ -14,22 +14,22 @@ export const Title: React.FC<TitleProps> = ({
 }) => {
   const Tag = tag;
 
-  let styles = "font-bold ";
+  let styles = "font-bold text-white ";
   switch (tag) {
     case "h1":
-      styles += "text-6xl";
+      styles += "text-6xl ";
       break;
     case "h2":
-      styles += "text-4xl";
+      styles += "text-5xl ";
       break;
     case "h3":
-      styles += "text-2xl";
+      styles += "text-xl ";
       break;
     case "h4":
-      styles += "text-xl";
+      styles += "text-xl ";
       break;
     case "h4":
-      styles += "text-lg";
+      styles += "text-lg ";
       break;
 
     default:
@@ -54,7 +54,7 @@ export const Text: React.FC<TextProps> = ({
 }) => {
   const Tag = tag;
 
-  let styles = "";
+  let styles = "text-white ";
   switch (tag) {
     case "p":
       styles += "";
@@ -68,11 +68,11 @@ export const Text: React.FC<TextProps> = ({
   }
   switch (size) {
     case "lg":
-      styles += "text-lg";
+      styles += " text-lg";
       break;
 
     case "md":
-      styles += "text-md";
+      styles += " text-md";
       break;
 
     case "sm":
